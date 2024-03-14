@@ -1,0 +1,64 @@
+.padre{
+    background-color: aquamarine;
+    /*display: flex;*/
+    display: grid;
+    grid-template-columns: 50% 20% auto auto; /*trabaja con 2,3,4.. columnas*/
+    grid-template-rows: 250px 100px auto;
+    /*justify-content: flex-end;*/
+    justify-content: space-between;
+    /*align-items: center;*/
+
+}
+
+.hijo{
+    background-color: violet;
+    /*width: 150px;
+    height: 150px;*/
+    border-style: solid;
+    border-color: sandybrown;
+    font-size: 50px;
+    /*display: inline-block;*/
+
+}
+
+.hijo1{
+    background-color: rgb(121, 67, 206);
+    /*width: 150px;
+    height: 150px;*/
+    border-style: solid;
+    border-color: sandybrown;
+    font-size: 50px;
+    grid-column: 1/5;
+    /*display: inline-block;*/
+
+
+}
+/*La caja 1 ocupa desde la columna 1 al 2, si se quiere de columna 1 a 5 se pone: grid-column: 1/5;*/
+
+.hijo2{
+    background-color: rgb(48, 202, 143);
+    border-style: solid;
+    border-color: sandybrown;
+    font-size: 50px;
+    grid-column: 1/4;
+    /*display: inline-block;*/
+
+
+}
+
+/*Se traba con filas cuano queremos qu la caja 4 sea mas grande */
+/*y que la caja 5 y 9 se mantengan ahi mismo, es decir la caja 4 ocupe 2 filas*/
+/*es decir que ocupe des 3 hasta 5, se trabaja con filas : grid-row: 3/5;*/
+
+.hijo4{
+    background-color: rgb(120, 194, 37);
+    border-style: solid;
+    border-color: sandybrown;
+    font-size: 50px;
+    grid-row: 3/5;
+    /*display: inline-block;*/
+
+
+}
+
+/**/
